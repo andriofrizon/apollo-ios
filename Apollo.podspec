@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.10'
   s.tvos.deployment_target = '9.1'
   s.watchos.deployment_target = '3.0'
+  
+  s.dependency 'Starscream', '~> 3.0.2'
 
   s.subspec 'Core' do |ss|
     ss.source_files = 'Sources/Apollo/*.swift'
